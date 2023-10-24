@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image:url(food.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no repeat;
+    background-attachment:fixed; 
+}
+nav{
+    background-color: rgb(255, 179, 0);
+    height:70px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+    gap:0px 30px;
+  
+}
+a{
+    color:azure;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0px;
+    width:0%;
+    height:2px;
+    background-color: whitesmoke;
+    transition: 0.5s linear;
+}
+a:hover{
+    color:black;
+
+}
+a:hover:after{
+    width:100%;
+
+}
+h1{
+    text-align: center;
+    color:white;
+}
+h2{
+    color:white;
+    text-align:center;
+    font-weight:400;
+}
+#get{
+    color:antiquewhite;
+    padding:25px;
+}
+.click{
+    border-radius: 4px;
+    background-color: red;
+    border:none;
+    text-align: center;
+    padding:15px;
+    font-size:22px;
+    margin-left:45%;
+
+}
+.click span{
+    cursor:pointer;
+    display:inline-block;
+    transition:0.3s;
+}
+.click:hover{
+    color:aqua;
+
+}
